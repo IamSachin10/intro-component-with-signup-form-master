@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 /* || Variables */
 
 :root {
@@ -49,7 +49,7 @@ text-align: center;
     margin-block: 1em 0.2em;
 }
 .header-container p {
-    font-weight: var(--fw-600);
+    /* font-weight: var(--fw-600); */
     margin-block: 0 2em;
 }
 
@@ -70,13 +70,22 @@ text-align: center;
 .span-2 {
     display: block;
 }
+.claim-trial-btn {
+    background-color: var(--clr-green);
+    color: inherit;
+    border: none;
+    margin-block-start: 2em;
+    padding: 1em 5em;
+    border-radius: 0.2em;
+    cursor: pointer;
+}
 
 /* || Form */
 
 .signup-form {
     background-color: hsl(0, 0%, 100%);
     margin: 1em 1em;
-    padding-top: 1em;
+    padding: 1.5em 0;
     border-radius: 0.5em;
 }
 .signup-form > div {
@@ -86,10 +95,22 @@ text-align: center;
 input {
     margin: 0 auto;
    display: block; 
-   width: 90%;
+   width: 85%;
    padding: 0.7em 0;
-   
 }
+
+.terms-and-services {
+    font-size: 0.8rem;
+    color: var(--clr-grayblue);
+    margin-block: 1em 0;
+   margin-inline: 1em;
+}
+.terms-and-services > span {
+    color: var(--clr-red);
+    font-weight: var(--fw-600);
+}
+
+
 
 
 
