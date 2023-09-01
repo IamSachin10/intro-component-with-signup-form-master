@@ -8,6 +8,9 @@
 
     background-image: url(../../images/bg-intro-desktop.png);
   }
+  section {
+    justify-self: flex-start;
+  }
   .header-container {
     justify-self: end;
     margin-inline: 5em;
