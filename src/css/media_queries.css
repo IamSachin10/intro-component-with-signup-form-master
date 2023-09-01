@@ -1,0 +1,44 @@
+@media screen and (min-width: 36em) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    /* min-height: 100vh; */
+    place-items: center;
+
+    background-image: url(../../images/bg-intro-desktop.png);
+  }
+  .header-container {
+    justify-self: end;
+    margin-inline: 5em;
+  }
+  .trial-btn,
+  .signup-form {
+    justify-self: start;
+  }
+  .main-title {
+    font-size: 2.5rem;
+    margin-inline: 1em;
+  }
+  .header-container > p {
+    margin-inline: 1.5em;
+  }
+  /* || btns */
+  .trial-btn {
+    padding: none;
+  }
+  .span-1,
+  .span-2 {
+    display: inline-block;
+  }
+  .claim-trial-btn {
+    padding: 1em 7.5em;
+  }
+  /* || form */
+  .signup-form {
+    padding: 2em 2.5em;
+  }
+  input {
+    width: 95%;
+  }
+}

@@ -7,7 +7,6 @@
   <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Intro component with sign up form</title>
-  <link rel="stylesheet" href="./src/css/reset.css">
   <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 
@@ -18,34 +17,48 @@
       <p>See how experienced developers solve problems in real-time Watching scripted tutorails is great, but
         understanding how developers think is invaluable.</p>
     </header>
-    <button class="trial-btn"><span class="span-1">Try it free 7 days</span> then
-       <span class="span-2">
-    </span>$20/mo. thereafter
-  </button>
-    <form action="" method="get" class="signup-form">
-      <div>
-        <label for="first-name"></label>
-        <input type="text" id="first-name" value="First Name" >
-      </div>
+    <section>
 
-      <div>
-        <label for="last-name"></label>
-        <input type="text" id="last-name" value="Last Name" >
-      </div>
-      <div>
-        <label for="email"></label>
-        <input type="email" id="email" value="Email" >
-      </div>
+      <button class="trial-btn"><span class="span-1">Try it free 7 days</span> then
+        <span class="span-2">
+        </span>$20/mo. thereafter
+      </button>
+      <!-- Form input section -->
+      <form action="/action.php" method="get" class="signup-form" data-id="form">
+        <div class="input-control" data-id="input-control">
+          <label for="first-name"></label>
+          <input type="text" id="first-name" class="input" data-id="first-name" 
+            placeholder="First Name">
+          <p class="error" data-id="error"></p>
+        </div>
 
-      <div>
-        <label for="password"></label>
-        <input type="text" id="password" value="Password">
-      </div>
-      <button class="claim-trial-btn">claim your free trail</button>
-      <p class="terms-and-services">By clicking the button you are agreeing to our <span>Term and Services</span></p>
-    </form>
+        <div class="input-control" data-id="input-control">
+          <label for="last-name"></label>
+          <input type="text" id="last-name" class="input" data-id="last-name" 
+            placeholder="Last Name">
+          <p class="error" data-id="error"></p>
+        </div>
+        <div class="input-control" data-id="input-control">
+          <label for="email"></label>
+          <input type="email" id="email" class="input" data-id="email" placeholder="Email">
+          <p class="error" data-id="error"></p>
+        </div>
+
+        <div class="input-control" data-id="input-control">
+          <label for="password"></label>
+          <input type="password" id="password" class="input" data-id="password" placeholder="Password">
+          <p class="error" data-id="error"></p>
+        </div>
+        <!-- Submit button -->
+        <button type="submit" class="claim-trial-btn" data-id="btn">claim your free trail</button>
+        <p class="terms-and-services">By clicking the button you are agreeing to our <span>Term and Services</span></p>
+      </form>
+    </section>
   </main>
-  <script src="./src/js/script.js"></script>
+  <script src="./src/js/script.js">
+
+    
+ </script>
 </body>
 
 </html>
